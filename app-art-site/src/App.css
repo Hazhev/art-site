@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Poppins:wght@600&family=Roboto&display=swap');
 
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Внешний контейнер Header */
 .wrapper {
   display: flex;
   width: 100%;
   flex-direction: column;
 }
 
+/* Верхняя часть хэдера */
 .container {
   max-width: 1100px;
   display: flex;
@@ -17,12 +26,14 @@
   width: 100%;
 }
 
+/* Контейнер с кнопками поиска, понравившееся и корзина */
 .container-buttons {
   display: flex;
   max-width: 500px;
   width: 100%;
   justify-content: space-around;
 }
+
 
 .button {
   width: 70px;
@@ -43,6 +54,7 @@
   padding: 0px;
 }
 
+/* Контейнер нижней части Header */
 .navigation-bar {
   display: flex;
   justify-content: center;
