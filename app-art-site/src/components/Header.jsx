@@ -1,4 +1,5 @@
 import React from "react";
+import '../Styles/Header.css'
 import logoMain from '../image/logoMain.svg'
 import iconSearch from '../image/iconSearch.svg'
 import iconHeart from '../image/iconHeart.svg'
@@ -12,7 +13,7 @@ const Header = () => {
 
                 <div className="container-buttons">
                     <form className="form-search">
-                        <input className="input-search"></input>
+                        <input type='text' className="input-search" placeholder="Поиск"></input>
                         <button className="button iconSearch"><img src={iconSearch} alt=''/></button>
                     </form>
 
