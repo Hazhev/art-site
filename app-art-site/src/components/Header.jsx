@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Links } from 'react-router-dom';
 import '../Styles/Header.css'
 import logoMain from '../image/logoMain.svg'
 import iconSearch from '../image/iconSearch.svg'
@@ -22,11 +23,11 @@ const Header = () => {
                 </div>
             </div>
             <div className="navigation-bar">
-                <a className="navigation-links">Магазин</a>
-                <a className="navigation-links">Художники</a>
-                <a className="navigation-links">Коллекции</a>
-                <a className="navigation-links">Аукционы</a>
-                <a className="navigation-links events">Events</a>
+                <Link to="/store" className="navigation-links">Магазин</Link>
+                <Link to="/artists" className="navigation-links">Художники</Link>
+                <Link to="/collections" className="navigation-links">Коллекции</Link>
+                <Link to="/auctions" className="navigation-links">Аукционы</Link>
+                <Link to="/events" className="navigation-links events">Events</Link>
             </div>
         </div>
     );
