@@ -67,6 +67,7 @@
     height: 80px;
   }
   
+  /* Класс ссылки */
   .navigation-links {
     font-family: 'Arsenal';
     font-style: normal;
@@ -74,11 +75,15 @@
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    color: #353535;
+    color: #949494;
     padding: 0px 30px;
     padding-top: 5px;
     border-right: 1px solid #353535;
     height: 30px;
+    text-decoration: none;
+  }
+  .navigation-links:hover {
+    color: #353535;
   }
   
   .navigation-links.events {
