@@ -7,11 +7,12 @@ import Collections from './components/Collections';
 import Store from './components/Store';
 import Auctions from './components/Auctions';
 import Events from './components/Events';
+import { useState } from 'react';
 
 function App() {
+  
   return (
     <div className="App">
-      <Header/>
       <Header/>
         <Routes>
             <Route path='/Store' element={<Store/>} />
