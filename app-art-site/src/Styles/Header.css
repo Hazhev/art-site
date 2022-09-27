@@ -8,7 +8,7 @@
   
   /* Верхняя часть хэдера */
   .container {
-    max-width: 1140px;
+    max-width: 1210px;
     min-width: 768px;
     padding: 0px 20px;
     display: flex;

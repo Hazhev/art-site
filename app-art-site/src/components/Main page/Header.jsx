@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link, Links } from 'react-router-dom';
-import '../Styles/Header.css'
-import logoMain from '../image/logoMain.svg'
-import iconSearch from '../image/iconSearch.svg'
-import iconHeart from '../image/iconHeart.svg'
-import iconShop from '../image/iconShop.svg'
-import Menu from "../menu/menu";
+import '../../Styles/Header.css'
+import logoMain from '../../image/logoMain.svg'
+import iconSearch from '../../image/iconSearch.svg'
+import iconHeart from '../../image/iconHeart.svg'
+import iconShop from '../../image/iconShop.svg'
+import Menu from "../../menu/menu";
 
 const Header = () => {
     const [menuActive, setMenuActive] = useState(false);

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Poppins:wght@600&family=Roboto&display=swap');
 
 .App {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

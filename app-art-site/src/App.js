@@ -1,13 +1,14 @@
 import './Styles/App.css';
 import { Route, Routes, Links } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/Main page/Header';
+import Footer from './components/Main page/Footer';
 import Artists from './components/Artists';
 import Collections from './components/Collections';
 import Store from './components/Store';
 import Auctions from './components/Auctions';
 import Events from './components/Events';
 import { useState } from 'react';
+import Main from './components/Main page/Main';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
             <Route path='/auctions' element={<Auctions/>} />
             <Route path='/events' element={<Events/>} />
         </Routes>
+        <Main/>
       <Footer/>
     </div>
   );
