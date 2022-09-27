@@ -12,7 +12,9 @@ const Header = () => {
     return(
         <div className="wrapper">
             <div className="container">
-                <img src={logoMain} alt="Лого" id="logoMain"/>
+                <Link to="/" className="n">
+                    <img src={logoMain} alt="Лого" id="logoMain"/>
+                </Link>
 
                 <div className="container-buttons">
                     <form className="form-search hide">
