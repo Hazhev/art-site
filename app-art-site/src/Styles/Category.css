@@ -1,0 +1,53 @@
+.wrapper-category{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 870px;
+}
+
+.container-category{
+    display: flex;
+    width: 870px;
+    height: 430px;
+    gap: 30px;
+}
+
+.category-card {
+    width: 270px;
+    min-height: 200px;
+    background-color: blueviolet;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.category-card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 570px;
+}
+
+.wrapper-category button{
+    align-self: center;
+}
+
+.category-btn{
+    position: absolute;
+    width: 210px;
+    height: 57px;
+    background: white;
+    bottom: 30px;
+    padding: 0px;
+    border: 0px;
+    
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #353535;
+
+}

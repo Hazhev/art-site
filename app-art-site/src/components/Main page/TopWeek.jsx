@@ -6,11 +6,11 @@ const TopWeek = () => {
     return(
         <div className="container-topweek">
             <div className="topweek-text">
-                <p>
+                <p className="narrowTopText">
                     ТОП <br/>
                     НЕДЕЛИ
                 </p>
-                <button>СМОТРЕТЬ БОЛЬШЕ</button>
+                <button className="showMoreBtn">СМОТРЕТЬ БОЛЬШЕ</button>
             </div>
 
             <div className="topweek-photo">

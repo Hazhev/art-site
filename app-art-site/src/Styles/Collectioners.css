@@ -1,0 +1,71 @@
+.wrapper-collectioners{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 270px;
+}
+
+.wrapper-collectioners button{
+    align-self: center;
+}
+
+.narrowTopText__mini{
+    font-family: 'Moniqa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 33px;
+    letter-spacing: 0.08em;
+    color: #353535;
+    margin: 0px;
+}
+
+.collectioners-card img{
+    width: 70px;
+    height: 70px;
+}
+
+.collectioners-card{
+    display: flex;
+    gap: 30px;
+}
+
+.container-collectioners{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 520px;
+    overflow-y: auto;
+}
+
+.collectioners-card-sub{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.collectioners-card-sub p{
+    margin: 0px;
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+#ten-arts{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+
+    /* посветлее магазин */
+
+    color: #B3B3B3;
+
+}

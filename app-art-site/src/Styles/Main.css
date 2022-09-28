@@ -15,3 +15,8 @@
     flex-direction: column;
     gap: 100px;
 }
+
+.subcontainer-main{
+    display: flex;
+    gap: 30px;
+}
