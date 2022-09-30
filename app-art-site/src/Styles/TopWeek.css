@@ -16,7 +16,14 @@
 .topweek-photo {
     display: flex;
     gap: 30px;
-    width: 870px;
+    max-width: 870px;
+    width: 100%;
+}
+
+.topweek-photo img{
+    min-width: 0;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .showMoreBtn{
