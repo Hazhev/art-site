@@ -23,6 +23,9 @@
 .collectioners-card img{
     width: 70px;
     height: 70px;
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .collectioners-card{
@@ -68,4 +71,80 @@
 
     color: #B3B3B3;
 
+}
+
+@media (max-width:1189px) {
+    .wrapper-collectioners{
+        width: 225px;
+        gap: 22px;
+    }
+
+    .collectioners-card{
+        gap: 10px;
+    }
+
+    .collectioners-card img{
+        width: 65px;
+        height: 65px;
+    }
+
+    .container-collectioners{
+        gap: 15px;
+        height: 465px;
+    }
+}
+
+@media (max-width:999px) {
+    .wrapper-collectioners{
+        gap: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper-collectioners{
+        width: 100%;
+    }
+
+    .narrowTopText__mini{
+        font-size: 46px;
+        line-height: 50px;
+    }
+
+    .container-collectioners{
+        height: 235px;
+        overflow: unset;
+        flex-wrap: wrap;
+        width: 440px;
+        align-self: center;
+    }
+
+    .container-collectioners div:nth-child(n+7){
+        display: none;
+    }
+}
+
+@media (max-width:479px) {
+    .narrowTopText__mini{
+        font-size: 36px;
+    }
+
+    .container-collectioners{
+        height: 245px;
+        width: 280px;
+    }
+
+    .container-collectioners div:nth-child(n+5){
+        display: none;
+    }
+
+    .collectioners-card{
+        flex-direction: column;
+        align-items: center;
+        width: 120px;
+    }
+
+    .collectioners-card img{
+        width: 60px;
+        height: 60px;
+    }
 }

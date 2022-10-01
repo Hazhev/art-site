@@ -17,8 +17,64 @@
 .container-artistsMiniCard {    
     width: 270px;
     height: 430px;
-    background-color: blueviolet;
     display: flex;
     position: relative;
     justify-content: center;
+}
+
+.container-artistsMiniCard img{
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:1189px) {
+    .container-artistsMiniCard{
+        width: 225px;
+        height: 350px;
+
+    }
+    .container-artistsMini-photo{
+        gap: 20px;
+    }
+
+    .container-artistsMini{
+        gap: 20px;
+        max-width: 960px;
+    }
+}
+
+@media (max-width:999px) {
+    .container-artistsMini-photo div:nth-child(4){
+        display: none;
+    }
+
+    .container-artistsMiniCard{
+        width: 229px;
+    }
+}
+
+@media (max-width:767px) {
+    .container-artistsMini-photo div:nth-child(n+3){
+        display: none;
+    }
+    .container-artistsMini-photo{
+        align-self: center;
+    }
+
+    .container-artistsMiniCard{
+        width: 210px;
+        height: 300px;
+    }
+
+    .container-artistsMini{
+        width: 100%;
+    }
+}
+
+@media (max-width:479px) {
+    .container-artistsMiniCard{
+        width: 130px;
+        height: 180px;
+    }
 }

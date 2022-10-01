@@ -12,8 +12,8 @@ const Category = () => {
         <div className="wrapper-category">
             <p className="narrowTopText">ТЕМЫ</p>
 
-            <div className="container-category">
-                <CategoryCard image={art_1} title={'Русь'}/>
+            <div className="container-category" >
+                <CategoryCard image={art_1} title={'Русь'} id={"blokHide"}/>
                 <div className="category-card-container">
                     <CategoryCard image={art_2} title={'Животные'}/>
                     <CategoryCard image={art_3} title={'Русь'}/>
