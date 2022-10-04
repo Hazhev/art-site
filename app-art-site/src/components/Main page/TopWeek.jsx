@@ -10,13 +10,12 @@ const TopWeek = () => {
                     ТОП <br/>
                     НЕДЕЛИ
                 </p>
+                <div className="topweek-photo">
+                    <img src={topWeekPhoto} alt="" />
+                    <img src={topWeekPhoto} alt="" />
+                    <img src={topWeekPhoto} alt="" />
+                </div>
                 <button className="showMoreBtn">СМОТРЕТЬ БОЛЬШЕ</button>
-            </div>
-
-            <div className="topweek-photo">
-                <img src={topWeekPhoto} alt="" />
-                <img src={topWeekPhoto} alt="" />
-                <img src={topWeekPhoto} alt="" />
             </div>
         </div>
     )
