@@ -15,6 +15,10 @@ const AuctionsCard = () => {
         <div className="auctions-card-subtitle">Иван Непетов</div>
       </div>
       <div className="auctions-card-info-container">
+        <div className="auctions-card-title-mobile">
+          <div className="auctions-card-title">Лодка-водка</div>
+          <div className="auctions-card-subtitle">Иван Непетов</div>
+        </div>
         <div className="auctions-card-info-line">
           <div className="auctions-card-info-left">13 000 руб.</div>
           <div className="auctions-card-info-bet-container">
@@ -30,7 +34,9 @@ const AuctionsCard = () => {
           </div>
         </div>
         <div className="auctions-card-info-line">
-          <div className="auctions-card-info-left">{today.toLocaleTimeString()} ч.</div>
+          <div className="auctions-card-info-left">
+            {today.toLocaleTimeString()} ч.
+          </div>
           <div className="auctions-card-info-bet-container">
             <img src={time} className="auctions-card-info-img" />
             <div className="auctions-card-info-time">1 ставка</div>

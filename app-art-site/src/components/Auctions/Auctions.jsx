@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Styles/Auctions.css";
-import AuctionsCard from "./AutcionsCard";
+import AuctionsCard from "./AuctionsCard";
 
 const Auctions = () => {
   let array = [1, 1, 1, 1, 1, 1];
