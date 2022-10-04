@@ -1,9 +1,9 @@
-
+import "../Styles/Filters.css";
 
 const Filters = () => {
   return (
     <div className="filters-wrapper">
-      <div className=""></div>
+      <h1 className="filters-title">Ты куда нажал, фильтры еще не сделаны</h1>
     </div>
   );
 };
