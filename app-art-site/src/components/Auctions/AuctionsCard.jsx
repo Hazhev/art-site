@@ -4,12 +4,16 @@ import img from "../../image/auctions-img.png";
 import bet from "../../image/auctions-card-info-bet.svg";
 import blicPrice from "../../image/auctions-card-info-blic-price.svg";
 import time from "../../image/auctions-card-info-time.svg";
+import investRating from "../../image/invest_rating.svg";
 
 const AuctionsCard = () => {
   const today = new Date();
   return (
     <div className="auctions-card">
-      <img className="auctions-card-img" src={img} />
+      <div className="auctions-card-img-container">
+        <img className="auctions-card-img" src={img} />
+        <img className="auctions-card-invest-rating" src={investRating} />
+      </div>
       <div className="auctions-card-title-line">
         <div className="auctions-card-title">Лодка-водка</div>
         <div className="auctions-card-subtitle">Иван Непетов</div>
