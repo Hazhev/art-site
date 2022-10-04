@@ -1,0 +1,159 @@
+.auctions-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    margin: 20px auto;
+}
+
+.auctions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auctions-title {
+    font-family: 'Moniqa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 83px;
+    letter-spacing: 0.08em;
+    color: #353535;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin: 10px 0px;
+}
+
+.auctions-card {
+    height: calc(570px - 30px);
+    width: calc(27% - 30px);
+    min-width: calc(370px - 30px);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #B3B3B3;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.auctions-card-img {
+    width: 100%;
+    height: 335px;
+    object-fit: contain;
+}
+
+.auctions-card-title-line {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 0px;
+}
+
+.auctions-card-title {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.auctions-card-subtitle {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #B3B3B3;
+    margin-top: 5px;
+}
+
+.auctions-card-info-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auctions-card-info-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.auctions-card-info-left {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.auctions-card-info-bet-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auctions-card-info-img { 
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px;
+}
+
+.auctions-card-info-bet {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #33E24F;
+    margin-right: 19px;
+}
+
+
+.auctions-card-info-blic-price{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #E94242;
+}
+
+.auctions-card-info-time{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #BB803C;
+    margin-right: 19px;
+
+}
