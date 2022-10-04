@@ -14,3 +14,10 @@
 body{
   margin: 0;
 }
+
+.separate-line{
+    height: 1px;
+    width: 100%;
+    background-color: #B3B3B3;
+    margin: 10px 0px 25px 0px;
+}
