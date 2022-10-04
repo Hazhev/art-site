@@ -65,6 +65,7 @@
 }
 
 .store-card {
+    position: relative;
     height: calc(570px - 30px);
     width: calc(27% - 30px);
     min-width: calc(370px - 30px);
@@ -82,4 +83,82 @@
     width: 100%;
     height: 335px;
     object-fit: contain;
+}
+
+.store-invest-rating {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    left: auto;
+}
+
+.store-card-title {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.store-card-subtitle-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store-card-subtitle-left {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.store-card-subtitle {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #B3B3B3;
+    margin-bottom: 10px;
+}
+
+.store-card-author {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.store-card-btn {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.store-card-price-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store-card-price {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #353535;
 }
