@@ -45,10 +45,24 @@
     margin-bottom: 30px;
 }
 
+.auctions-card-img-container{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
 .auctions-card-img {
     width: 100%;
-    height: 335px;
+    height: auto;
     object-fit: contain;
+}
+
+.auctions-card-invest-rating{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    right: 10px;
 }
 
 .auctions-card-title-line {
@@ -175,10 +189,6 @@
         min-width: calc(300px - 30px);
         height: 517px;
     }
-
-    .auctions-card-img {
-        height: 270px;
-    }
 }
 
 @media screen and (max-width: 999px) and (min-width: 768px) {
@@ -194,12 +204,8 @@
 
     .auctions-card {
         min-width: calc(354px - 30px);
-        height: 507px;
+        height: fit-content;
         margin-bottom: 20px;
-    }
-
-    .auctions-card-img {
-        height: 234px;
     }
 }
 
@@ -240,9 +246,14 @@
         flex-direction: row;
     }
 
-    .auctions-card-img {
-        height: 100%;
+    .auctions-card-img-container{
         width: 49%;
+        height: fit-content;
+    }
+
+    .auctions-card-img {
+        height: auto;
+        width: 100%;
     }
 
     .auctions-card-info-left,
@@ -267,12 +278,7 @@
     .auctions-card {
         min-width: unset;
         width: 100%;
-        height: 459px;
+        height: fit-content;
         margin-bottom: 20px;
-    }
-
-    .auctions-card-img {
-        height: 180px;
-        width: 180px;
     }
 }
