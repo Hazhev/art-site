@@ -155,5 +155,24 @@
     letter-spacing: 0.03em;
     color: #BB803C;
     margin-right: 19px;
+}
 
+@media screen and (max-width: 1189px) and (min-width: 1000px) {
+    .auctions-wrapper{
+        max-width: 960px;
+    }
+
+    .auctions-title{
+        font-size: 70px;
+        line-height: 73px;
+    }
+
+    .auctions-card{
+        min-width: calc(300px - 30px);
+        height: 517px;
+    }
+
+    .auctions-card-img{
+        height: 270px;
+    }
 }
