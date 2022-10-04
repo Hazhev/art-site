@@ -176,3 +176,24 @@
         height: 270px;
     }
 }
+
+@media screen and (max-width: 999px) and (min-width: 768px) {
+    .auctions-wrapper{
+        max-width: 728px;
+    }
+
+    .auctions-title{
+        font-size: 70px;
+        line-height: 73px;
+    }
+
+    .auctions-card{
+        min-width: calc(354px - 30px);
+        height: 507px;
+        margin-bottom: 20px;
+    }
+
+    .auctions-card-img{
+        height: 234px;
+    }
+}
