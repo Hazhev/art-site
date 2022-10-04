@@ -3,28 +3,40 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+    align-items: center;
   }
   
   /* Верхняя часть хэдера */
   .container {
-    max-width: 1100px;
+    max-width: 1210px;
+    min-width: 768px;
+    padding: 0px 20px;
     display: flex;
     height: 110px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between ;
-    margin: 0px auto;
     width: 100%;
+    box-sizing: border-box;
   }
   
-  /* Контейнер с кнопками поиска, понравившееся и корзина */
+  /* Верхняя часть Хэдера. Контейнер с кнопками поиска, понравившееся и корзина */
   .container-buttons {
     display: flex;
     max-width: 500px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
+  @media (max-width: 768px) {
+    .form-search {
+        display: none;
+    }
+
+    .container {
+        min-width: 0px;
+    }
+  }
   
   .button {
     width: 70px;
@@ -36,6 +48,7 @@
   
   .form-search {
     display: flex;
+    /* display: none; */
   }
   
   .input-search {
@@ -57,6 +70,51 @@
   }
   input::placeholder { color : #B3B3B3}
   
+  .burger-nav {
+    display: flex;
+    width: 70px;
+    height: 44px;
+    background-color: #353535;
+    padding: 0px;
+    border: 0px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .burger-btn {
+    width: 25px;
+    height: 16px;
+    position: relative;
+ 
+  }
+  .burger-btn:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 25px;
+    background-color: white;
+    height: 2px;
+  }
+
+.burger-btn span {
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 25px;
+    background-color: white;
+    height: 2px;
+}
+
+  .burger-btn:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 25px;
+    background-color: white;
+    height: 2px;
+  }
+
   /* Контейнер нижней части Header */
   .navigation-bar {
     display: flex;
@@ -65,6 +123,12 @@
     border-top: 1px solid #B3B3B3;
     border-bottom: 1px solid #B3B3B3;
     height: 80px;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .navigation-bar {
+        display: none;
+    }
   }
   
   /* Класс ссылки */
@@ -95,4 +159,28 @@
     height: 50px;
     width: 50px;
   }
+
+  @media (max-width: 768px) {
+    .button.hide {
+        display: none;
+    }
+    .form-search.hide{
+        display: none;
+    }
+    .container-buttons{
+        justify-content: flex-end;
+    }
+    .container {
+        height: 100px;
+        border-bottom: 1px solid #B3B3B3;
+    }
+  }
   
+  @media (min-width: 769px) {
+    .burger-nav {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+  }

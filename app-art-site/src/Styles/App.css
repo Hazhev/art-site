@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Poppins:wght@600&family=Roboto&display=swap');
+@font-face {
+  font-family: 'Moniqa';
+  src: url(../Fonts/Monica.ttf);
+}
+
 
 .App {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+body{
+  margin: 0;
+}
+
+.separate-line{
+    height: 1px;
+    width: 100%;
+    background-color: #B3B3B3;
+    margin: 10px 0px 25px 0px;
+}

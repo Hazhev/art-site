@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Poppins:wght@600&family=Roboto&display=swap');
+
+.container-topweek {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topweek-text {
+    display: flex;
+    max-width: 170px;
+    max-height: 261px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topweek-photo {
+    display: flex;
+    gap: 30px;
+    max-width: 870px;
+    width: 100%;
+}
+
+.topweek-photo img{
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.showMoreBtn{
+    width: 170px;
+    height: 65px;
+    background: #353535;
+    padding: 0px;
+    border: 0px;
+
+    /* Text */
+    color: white;
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+}
+
+.narrowTopText{
+    margin: 0;
+
+    font-family: 'Moniqa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 83px;
+    letter-spacing: 0.03em;
+    /* текст */
+    color: #353535;
+}
+
+@media (max-width:1189px) {
+    .container-topweek{
+        max-height: 224px;
+        max-width: 960px;
+    }
+
+    .topweek-text{
+        height: 224px;
+    }
+    
+    .narrowTopText{
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .topweek-photo{
+        max-width: 715px;
+        gap: 20px;
+    }
+
+    .showMoreBtn{
+        height: 58px;
+    }
+}
+
+@media (max-width:999px) {
+    .container-topweek{
+        max-width: 728px;
+    }
+    .topweek-photo img:nth-child(3){
+        display: none;
+    }
+
+    .topweek-photo{
+        max-width: 479px;
+    }
+}
+
+@media (max-width:767px) {
+    .container-topweek{
+        max-width: 100%;
+        max-height: 382px;
+        position: relative;
+    }
+
+    .topweek-text{
+        height: 382px;
+        max-height: 382px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .topweek-photo{
+        max-width: 440px;
+        position: absolute;
+        top: 116px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .narrowTopText{
+        font-size: 46px;
+        line-height: 50px;
+    }
+
+    .showMoreBtn{
+        height: 45px;
+        width: 155px;
+        font-size: 13px;
+        align-self: center;
+    }
+}
+
+@media (max-width:479px) {
+    .narrowTopText{
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .topweek-text{
+        height: 300px;
+        max-height: 300px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .topweek-photo{
+        max-width: 280px;
+        top: 100px;
+    }
+
+    .showMoreBtn{
+        height: 45px;
+        width: 145px;
+        font-size: 12px;
+        align-self: center;
+    }
+}
