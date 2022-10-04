@@ -8,7 +8,7 @@ import AddBtn from "../../image/add-btn.svg";
 const StoreCard = () => {
   return (
     <div className="store-card">
-      <img className="store-img" src={img} />
+      <img className="store-card-img" src={img} />
       <img className="store-invest-rating" src={investRating} />
       <div className="store-card-title">Лодка-водка</div>
       <div className="store-card-subtitle-line">
@@ -22,6 +22,10 @@ const StoreCard = () => {
       </div>
       <div className="store-card-price-line">
         <div className="store-card-price">144 000 руб.</div>
+        <img className="store-card-btn" src={AddBtn} />
+      </div>
+      <div className="store-card-btn-line">
+        <img className="store-card-btn" src={LikeBtn} />
         <img className="store-card-btn" src={AddBtn} />
       </div>
     </div>
