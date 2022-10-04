@@ -4,7 +4,7 @@ import Header from './components/Main page/Header';
 import Footer from './components/Main page/Footer';
 import Artists from './components/Artists';
 import Collections from './components/Collections';
-import Store from './components/Store';
+import Store from './components/Store/Store';
 import Auctions from './components/Auctions/Auctions';
 import Events from './components/Events';
 import { useState } from 'react';

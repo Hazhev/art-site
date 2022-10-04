@@ -1,0 +1,85 @@
+.store-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    margin: 20px auto;
+}
+
+.store-title-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store-title {
+    font-family: 'Moniqa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 83px;
+    letter-spacing: 0.08em;
+    color: #353535;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin: 10px 0px;
+}
+
+.store-filters-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.store-filter-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.store-filter-title {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.store-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store-card {
+    height: calc(570px - 30px);
+    width: calc(27% - 30px);
+    min-width: calc(370px - 30px);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #B3B3B3;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.store-card-img {
+    width: 100%;
+    height: 335px;
+    object-fit: contain;
+}
