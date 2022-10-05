@@ -7,6 +7,7 @@
     width: 100%;
     max-width: 1170px;
     margin: 20px auto;
+    position: relative;
 }
 
 .store-title-line {
