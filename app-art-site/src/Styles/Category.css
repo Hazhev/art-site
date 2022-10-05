@@ -7,7 +7,7 @@
 
 .container-category{
     display: flex;
-    width: 870px;
+    max-width: 870px;
     height: 430px;
     gap: 30px;
 }
@@ -15,7 +15,6 @@
 .category-card {
     width: 270px;
     min-height: 200px;
-    background-color: blueviolet;
     display: flex;
     position: relative;
     justify-content: center;
@@ -66,7 +65,7 @@
     }
 
     .container-category{
-        width: 715px;
+        max-width: 715px;
         gap: 20px;
         height: 420px;
     }
@@ -93,7 +92,7 @@
     }
 
     .container-category{
-        width: 480px;
+        max-width: 480px;
         height: 416px;
     }
 
@@ -116,16 +115,18 @@
     }
 
     .category-card-container{
-        width: 440px;
+        width: unset;
         gap: 20px;
+        flex-wrap: nowrap;
     }
 
     .category-card{
-        max-width: 210px;
+        max-width: unset;
+        width: unset;
     }
 
     .container-category{
-        width: 440px;
+        max-width: 100%;
         height: 200px;
         align-self: center;
     }
@@ -136,19 +137,9 @@
 }
 
 @media (max-width:479px) {
-    .category-card-container{
-        width: 280px;
-    }
-
-    .container-category{
-        width: 280px;
-        height: 130px;
-    }
 
     .category-card{
-        max-width: 130px;
         min-height: unset;
-        max-height: 130px;
     }
 
     .category-btn{

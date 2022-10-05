@@ -8,10 +8,12 @@
 
 .topweek-text {
     display: flex;
-    max-width: 170px;
+    width: 100%;
     max-height: 261px;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
 }
 
 .topweek-photo {
@@ -19,6 +21,8 @@
     gap: 30px;
     max-width: 870px;
     width: 100%;
+    order: 1;
+    align-self: flex-end;
 }
 
 .topweek-photo img{
@@ -66,6 +70,8 @@
 
     .topweek-text{
         height: 224px;
+        row-gap: unset;
+        column-gap: unset;
     }
     
     .narrowTopText{
@@ -99,25 +105,23 @@
 @media (max-width:767px) {
     .container-topweek{
         max-width: 100%;
-        max-height: 382px;
+        max-height: unset;
         position: relative;
     }
 
     .topweek-text{
-        height: 382px;
-        max-height: 382px;
+        height: unset;
+        max-height: unset;
         max-width: 100%;
         width: 100%;
+        gap: 20px;
     }
 
     .topweek-photo{
-        max-width: 440px;
-        position: absolute;
-        top: 116px;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
+        max-width: unset;
+        order: unset;
+        align-self: center;
+        width: unset;
     }
 
     .narrowTopText{
@@ -140,15 +144,8 @@
     }
 
     .topweek-text{
-        height: 300px;
-        max-height: 300px;
         max-width: 100%;
         width: 100%;
-    }
-
-    .topweek-photo{
-        max-width: 280px;
-        top: 100px;
     }
 
     .showMoreBtn{

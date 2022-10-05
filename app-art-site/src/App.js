@@ -6,7 +6,7 @@ import Artists from './components/Artists';
 import Collections from './components/Collections';
 import Store from './components/Store/Store';
 import Auctions from './components/Auctions/Auctions';
-import Events from './components/Events';
+import Events from './components/Events page/Events';
 import { useState } from 'react';
 import Main from './components/Main page/Main';
 

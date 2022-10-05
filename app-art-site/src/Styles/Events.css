@@ -1,0 +1,131 @@
+
+.wrapper-events{
+    min-height: 100vh;
+}
+
+.event-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #B3B3B3;
+    padding: 30px 0 50px 0;
+    gap: 30px;
+}
+
+.event-post img{
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.event-post button{
+    width: 416px;
+    height: 79px;
+    background-color: #353535;
+    border: 0;
+    padding: 0px;
+    text-transform: uppercase;
+
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.container-events{
+    max-width: 1170px;
+    min-width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.event-text-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.event-text-name{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.event-text-grey{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #B3B3B3;
+}
+
+.events-text-description{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+@media (max-width:1179px){
+    .event-post img{
+        max-width: 92%;
+        min-height: 471px;
+    }
+
+    .container-events{
+        max-width: 96%;
+    }
+}
+
+@media (max-width:999px){
+
+    .event-post button{
+        width: 404px;
+        height: 78px;
+    }
+
+    .event-post img{
+        min-height: 354px;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .event-post button{
+        width: 386px;
+        height: 76px;
+    }
+    
+}
+
+@media (max-width:479px){
+
+    .event-post button{
+        width: 244px;
+        height: 55px;
+    }
+
+    .event-post img{
+        min-height: 260px;
+    }
+}

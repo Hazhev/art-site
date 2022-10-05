@@ -129,22 +129,17 @@
     }
 
     .container-collectioners{
-        height: 245px;
+        height: 325px;
         width: 280px;
+        align-self: unset;
     }
 
     .container-collectioners div:nth-child(n+5){
         display: none;
     }
 
-    .collectioners-card{
-        flex-direction: column;
-        align-items: center;
-        width: 120px;
-    }
-
     .collectioners-card img{
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
 }
