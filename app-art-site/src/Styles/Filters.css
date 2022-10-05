@@ -158,7 +158,6 @@
         left: -20px;
         top: 103px;
         height: calc(100% - 83px + 210px);
-        ;
     }
 
     .filters-container {
@@ -184,4 +183,47 @@
     .filter-reset-btn {
         margin-top: 50px;
     }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    .filters-wrapper {
+        left: -20px;
+        top: 103px;
+        height: calc(100% - 83px + 210px);
+    }
+
+    .filters-container {
+        width: calc(100% - 40px);
+        padding: 20px 20px 150px 20px;
+    }
+
+    .filters-title {
+        font-size: 40px;
+        line-height: 42px;
+        align-self: center;
+    }
+
+    .filters-line {
+        width: 100%;
+        margin: 20px 0px;
+        justify-content: space-between;
+    }
+
+    .filters-select-box{
+        margin-right: unset;
+    }
+
+    .filter-color-line {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .filter-color-el {
+       margin: 0px 10px 20px 10px;
+    }
+
+    .filter-reset-btn{
+        align-self: center;
+    }
+
 }
