@@ -128,13 +128,60 @@
 }
 
 @media screen and (max-width: 1189px) and (min-width: 1000px) {
-    .filters-wrapper{
+    .filters-wrapper {
         left: -20px;
         top: 103px;
         height: calc(100% - 83px + 251px);
     }
 
-    .filters-container{
+    .filters-container {
         width: 100%;
+        padding: 20px 20px 30px 20px;
+    }
+
+    .filters-title {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    .filters-line {
+        margin: 30px 0px 15px 0px;
+    }
+
+    .filter-reset-btn {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 999px) and (min-width: 768px) {
+    .filters-wrapper {
+        left: -20px;
+        top: 103px;
+        height: calc(100% - 83px + 210px);
+        ;
+    }
+
+    .filters-container {
+        width: 100%;
+        padding: 20px 20px 30px 20px;
+
+    }
+
+    .filters-title {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    .filters-line {
+        margin: 30px 0px 15px 0px;
+        justify-content: space-around;
+    }
+
+    .filters-select-box {
+        margin-right: unset;
+    }
+
+    .filter-reset-btn {
+        margin-top: 50px;
     }
 }
