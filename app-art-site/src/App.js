@@ -3,7 +3,7 @@ import { Route, Routes, Links, BrowserRouter } from 'react-router-dom';
 import Header from './components/Main page/Header';
 import Footer from './components/Main page/Footer';
 import Artists from './components/Artists';
-import Collections from './components/Collections';
+import Collections from './components/Collections/Collections';
 import Store from './components/Store/Store';
 import Auctions from './components/Auctions/Auctions';
 import Events from './components/Events page/Events';
