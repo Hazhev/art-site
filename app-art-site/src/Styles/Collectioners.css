@@ -1,145 +1,109 @@
+
 .wrapper-collectioners{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    width: 270px;
-}
-
-.wrapper-collectioners button{
-    align-self: center;
-}
-
-.narrowTopText__mini{
-    font-family: 'Moniqa';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 33px;
-    letter-spacing: 0.08em;
-    color: #353535;
-    margin: 0px;
-}
-
-.collectioners-card img{
-    width: 70px;
-    height: 70px;
-    min-width: 0;
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.collectioners-card{
-    display: flex;
-    gap: 30px;
+    min-height: 100vh;
 }
 
 .container-collectioners{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 520px;
-    overflow-y: auto;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
-.collectioners-card-sub{
+.container-collectionersCard{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px 0 100px 0;
+    border-top: 1px solid #B3B3B3;
+    gap: 30px;
 }
 
-.collectioners-card-sub p{
-    margin: 0px;
+.text-collectionersCard{
     font-family: 'Arsenal';
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #353535;
+
+    max-width: 770px;
+    align-self: center;
+}
+
+.collectioners-img-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.container-collectionersCard img{
+    min-width: 0;
+    object-fit: cover;
+    max-width: 370px;
+    height: 508px;
+}
+
+.collectioners-btn{
+    position: absolute;
+    width: 210px;
+    height: 57px;
+    background: white;
+    bottom: 30px;
+    padding: 0px;
+    border: 0px;
+    
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
     letter-spacing: 0.03em;
     color: #353535;
 }
 
-#ten-arts{
+.full-collection{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    max-height: 366px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-top: 50px;
+    border-top: 1px solid #B3B3B3;
+}
+
+.full-collection-photo{
+    display: flex;
+    max-width: 870px;
+    max-height: 315px;
+    order: 1;
+    column-gap: 30px;
+    align-self: flex-end;
+}
+
+.full-collection-photo-sub{
+    max-width: 270px;
+}
+
+.full-collection-photo-sub img{
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 270px;
+}
+
+.full-collection-photo-sub p{
+    margin: 10px 0 0 0;
+
     font-family: 'Arsenal';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
     letter-spacing: 0.03em;
-
-    /* посветлее магазин */
-
-    color: #B3B3B3;
-
-}
-
-@media (max-width:1189px) {
-    .wrapper-collectioners{
-        width: 225px;
-        gap: 22px;
-    }
-
-    .collectioners-card{
-        gap: 10px;
-    }
-
-    .collectioners-card img{
-        width: 65px;
-        height: 65px;
-    }
-
-    .container-collectioners{
-        gap: 15px;
-        height: 465px;
-    }
-}
-
-@media (max-width:999px) {
-    .wrapper-collectioners{
-        gap: 20px;
-    }
-}
-
-@media (max-width:767px) {
-    .wrapper-collectioners{
-        width: 100%;
-    }
-
-    .narrowTopText__mini{
-        font-size: 46px;
-        line-height: 50px;
-    }
-
-    .container-collectioners{
-        height: 235px;
-        overflow: unset;
-        flex-wrap: wrap;
-        width: 440px;
-        align-self: center;
-    }
-
-    .container-collectioners div:nth-child(n+7){
-        display: none;
-    }
-}
-
-@media (max-width:479px) {
-    .narrowTopText__mini{
-        font-size: 36px;
-    }
-
-    .container-collectioners{
-        height: 325px;
-        width: 280px;
-        align-self: unset;
-    }
-
-    .container-collectioners div:nth-child(n+5){
-        display: none;
-    }
-
-    .collectioners-card img{
-        width: 70px;
-        height: 70px;
-    }
+    color: #353535;
+    text-align: center;
 }

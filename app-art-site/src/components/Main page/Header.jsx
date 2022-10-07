@@ -9,6 +9,7 @@ import Menu from "../../menu/menu";
 
 const Header = () => {
     const [menuActive, setMenuActive] = useState(false);
+    
     return(
         <div className="wrapper">
             <div className="container">
@@ -35,7 +36,7 @@ const Header = () => {
             <div className="navigation-bar">
                 <Link to="/store" className="navigation-links">Магазин</Link>
                 <Link to="/artists" className="navigation-links">Художники</Link>
-                <Link to="/collections" className="navigation-links">Коллекции</Link>
+                <Link to="/themes" className="navigation-links">Темы</Link>
                 <Link to="/auctions" className="navigation-links">Аукционы</Link>
                 <Link to="/events" className="navigation-links events">Events</Link>
             </div>

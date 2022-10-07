@@ -60,6 +60,7 @@
     letter-spacing: 0.03em;
     /* текст */
     color: #353535;
+    text-transform: uppercase;
 }
 
 @media (max-width:1189px) {
