@@ -9,21 +9,24 @@ import Auctions from './components/Auctions/Auctions';
 import Events from './components/Events page/Events';
 import { useState } from 'react';
 import Main from './components/Main page/Main';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
 
     return (
         <div className="App">
-            <Header />
-            <Routes>
-                <Route path='/' element={<Main />} />
-                <Route path='/Store' element={<Store />} />
-                <Route path='/artists' element={<Artists />} />
-                <Route path='/collections' element={<Collections />} />
-                <Route path='/auctions' element={<Auctions />} />
-                <Route path='/events' element={<Events />} />
-            </Routes>
-            <Footer />
+            <ScrollToTop>
+                <Header />
+                <Routes>
+                    <Route path='/' element={<Main />} />
+                    <Route path='/Store' element={<Store />} />
+                    <Route path='/artists' element={<Artists />} />
+                    <Route path='/collections' element={<Collections />} />
+                    <Route path='/auctions' element={<Auctions />} />
+                    <Route path='/events' element={<Events />} />
+                </Routes>
+                <Footer />
+            </ScrollToTop>
         </div>
     );
 }
