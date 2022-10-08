@@ -22,9 +22,10 @@ function App() {
                     <Route path='/' element={<Main />} />
                     <Route path='/Store' element={<Store />} />
                     <Route path='/artists' element={<Artists />} />
-                    <Route path='/collections' element={<Collections />} />
+                    <Route path='/themes' element={<Themes />} />
                     <Route path='/auctions' element={<Auctions />} />
                     <Route path='/events' element={<Events />} />
+                    <Route path='/collectioners' element={<Collectioners />} />
                 </Routes>
                 <Footer />
             </ScrollToTop>
