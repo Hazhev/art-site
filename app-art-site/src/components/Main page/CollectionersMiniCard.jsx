@@ -1,13 +1,13 @@
 import React from "react";
-import '../../Styles/Collectioners.css'
+import '../../Styles/CollectionersMini.css'
 import Collectioner from '../../image/collectioner.png'
 
 const CollectionersCard = () => {
     return(
-        <div className="collectioners-card">
+        <div className="collectionersMini-card">
             <img src={Collectioner} alt="" />
 
-            <div className="collectioners-card-sub">
+            <div className="collectionersMini-card-sub">
                 <p>Виктор Плюшка</p>
                 <p id="ten-arts">10 картин</p>
             </div>

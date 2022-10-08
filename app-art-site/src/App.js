@@ -3,7 +3,8 @@ import { Route, Routes, Links, BrowserRouter } from 'react-router-dom';
 import Header from './components/Main page/Header';
 import Footer from './components/Main page/Footer';
 import Artists from './components/Artists';
-import Collections from './components/Collections';
+import Themes from './components/Themes';
+import Collectioners from './components/Collectioners/Collectioners';
 import Store from './components/Store/Store';
 import Auctions from './components/Auctions/Auctions';
 import Events from './components/Events page/Events';
@@ -19,9 +20,10 @@ function App() {
                 <Route path='/' element={<Main />} />
                 <Route path='/Store' element={<Store />} />
                 <Route path='/artists' element={<Artists />} />
-                <Route path='/collections' element={<Collections />} />
+                <Route path='/themes' element={<Themes/>} />
                 <Route path='/auctions' element={<Auctions />} />
                 <Route path='/events' element={<Events />} />
+                <Route path='/collectioners' element={<Collectioners />} />
             </Routes>
             <Footer />
         </div>

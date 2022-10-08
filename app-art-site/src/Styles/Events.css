@@ -115,6 +115,11 @@
         width: 386px;
         height: 76px;
     }
+
+    .events-text-description{
+        text-align: unset;
+        padding: 0 10px;
+    }
     
 }
 
