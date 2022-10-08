@@ -11,12 +11,11 @@ const Store = () => {
 
   const toggleFilters = () => {
     setOpenFilters(!openFilters);
-    console.log(openFilters);
   };
 
   return (
     <div className="store-wrapper">
-      {openFilters && <Filters />}
+      {openFilters && <Filters closeFilters={toggleFilters}/>}
 
       <div className="store-title-line">
         <div className="store-title">Оригиналы</div>
