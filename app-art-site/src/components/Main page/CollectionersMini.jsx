@@ -1,12 +1,14 @@
 import React from "react";
-import '../../Styles/Collectioners.css'
-import CollectionersCard from "./CollectionersCard";
+import '../../Styles/CollectionersMini.css'
+import CollectionersCard from "./CollectionersMiniCard";
+import { useNavigate } from "react-router-dom"
 
-const Collectioners = () => {
+const CollectionersMini = () => {
+    const navigate = useNavigate();
     return(
-        <div className="wrapper-collectioners">
+        <div className="wrapper-collectionersMini">
             <p className="narrowTopText__mini">Коллекционеры</p>
-            <div className="container-collectioners">
+            <div className="container-collectionersMini">
                 <CollectionersCard/>
                 <CollectionersCard/>
                 <CollectionersCard/>
@@ -18,9 +20,9 @@ const Collectioners = () => {
                 <CollectionersCard/>
                 <CollectionersCard/>
             </div>
-            <button className="showMoreBtn">СМОТРЕТЬ БОЛЬШЕ</button>
+            <button className="showMoreBtn" onClick={() => navigate("/collectioners")}>СМОТРЕТЬ БОЛЬШЕ</button>
         </div>
     )
 }
 
-export default Collectioners;
+export default CollectionersMini;

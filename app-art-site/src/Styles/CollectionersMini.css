@@ -1,0 +1,145 @@
+.wrapper-collectionersMini{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 270px;
+}
+
+.wrapper-collectionersMini button{
+    align-self: center;
+}
+
+.narrowTopText__mini{
+    font-family: 'Moniqa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 33px;
+    letter-spacing: 0.08em;
+    color: #353535;
+    margin: 0px;
+}
+
+.collectionersMini-card img{
+    width: 70px;
+    height: 70px;
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.collectionersMini-card{
+    display: flex;
+    gap: 30px;
+}
+
+.container-collectionersMini{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 520px;
+    overflow-y: auto;
+}
+
+.collectionersMini-card-sub{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.collectionersMini-card-sub p{
+    margin: 0px;
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+#ten-arts{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+
+    /* посветлее магазин */
+
+    color: #B3B3B3;
+
+}
+
+@media (max-width:1189px) {
+    .wrapper-collectionersMini{
+        width: 225px;
+        gap: 22px;
+    }
+
+    .collectionersMini-card{
+        gap: 10px;
+    }
+
+    .collectionersMini-card img{
+        width: 65px;
+        height: 65px;
+    }
+
+    .container-collectionersMini{
+        gap: 15px;
+        height: 465px;
+    }
+}
+
+@media (max-width:999px) {
+    .wrapper-collectionersMini{
+        gap: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper-collectionersMini{
+        width: 100%;
+    }
+
+    .narrowTopText__mini{
+        font-size: 46px;
+        line-height: 50px;
+    }
+
+    .container-collectionersMini{
+        height: 235px;
+        overflow: unset;
+        flex-wrap: wrap;
+        width: 440px;
+        align-self: center;
+    }
+
+    .container-collectionersMini div:nth-child(n+7){
+        display: none;
+    }
+}
+
+@media (max-width:479px) {
+    .narrowTopText__mini{
+        font-size: 36px;
+    }
+
+    .container-collectionersMini{
+        height: 325px;
+        width: 280px;
+        align-self: unset;
+    }
+
+    .container-collectionersMini div:nth-child(n+5){
+        display: none;
+    }
+
+    .collectionersMini-card img{
+        width: 70px;
+        height: 70px;
+    }
+}
