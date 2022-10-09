@@ -38,7 +38,7 @@
     position: relative;
 }
 
-.container-collectionersCard img{
+.collectioners-img-btn img{
     min-width: 0;
     object-fit: cover;
     max-width: 370px;
@@ -70,7 +70,6 @@
     row-gap: 30px;
     max-height: 366px;
     flex-wrap: wrap;
-    box-sizing: border-box;
     padding-top: 50px;
     border-top: 1px solid #B3B3B3;
 }
@@ -90,9 +89,8 @@
 
 .full-collection-photo-sub img{
     min-width: 0;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
-    max-height: 270px;
 }
 
 .full-collection-photo-sub p{
@@ -107,3 +105,116 @@
     color: #353535;
     text-align: center;
 }
+
+@media (max-width:1189px) {
+    .container-collectioners{
+        max-width: 960px;
+    }
+
+    .container-collectionersCard {
+        padding: 50px 0 70px 0;
+    }
+
+    .full-collection{
+        row-gap: 20px;
+        height: 260px;
+        padding-top: 30px;
+    }
+
+    .full-collection-photo{
+        max-width: 715px;
+        max-height: 250px;
+        column-gap: 20px;
+    }
+
+    .full-collection-photo-sub {
+        width: 225px;
+    }
+    .narrowTopText.collection{
+        font-size: 54px;
+    }
+
+    .full-collection-photo-sub img {
+        max-height: 200px;
+    }
+    .full-collection-photo-sub p {
+        margin: 5px 0 0 0;
+    }
+}
+
+@media (max-width:999px) {
+    .container-collectioners{
+        max-width: 728px;
+    }
+
+    .full-collection-photo{
+        max-width: 728px;
+    }
+
+    .full-collection-photo div:nth-child(3){
+        display: none;
+    }
+
+    .full-collection-photo-sub p{
+        font-size: 22px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .container-collectioners{
+        max-width: 95%;
+    }
+
+    .full-collection{
+        flex-wrap: nowrap;
+        height: unset;
+        max-height: unset;
+    }
+
+    .full-collection-photo{
+        max-width: 100%;
+        max-height: unset;
+        order: unset;
+        align-self: center;
+    }
+
+    .full-collection-photo-sub {
+        width: unset;
+    }
+
+    .full-collection-photo-sub img {
+        max-height: unset;
+    }
+
+    .narrowTopText.collection{
+        font-size: 46px;
+    }
+
+    .collectioners-img-btn img{
+        max-width: 92%;
+        max-height: 390px;
+    }
+}
+
+@media (max-width:479px) {
+    .narrowTopText.collection{
+        font-size: 36px;
+    }
+
+    .full-collection-photo-sub p{
+        font-size: 19px;
+        margin: 3px 0 0 0;
+    }
+
+    .container-collectionersCard {
+        padding: 30px 0 60px 0;
+    }
+
+    .collectioners-btn{
+        width: 191px;
+        height: 50px;
+    }
+    
+}
+

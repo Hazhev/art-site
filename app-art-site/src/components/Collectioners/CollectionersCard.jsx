@@ -14,7 +14,7 @@ const CollectionersCard = () => {
         
 
             <div className="full-collection">
-                <div className="narrowTopText">
+                <div className="narrowTopText collection">
                     полная <br />
                     коллекция
                 </div>
