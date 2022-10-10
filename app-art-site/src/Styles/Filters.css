@@ -1,8 +1,9 @@
 .filters-wrapper {
     position: absolute;
     top: 113px;
-    left: -135px;
-    right: 0;
+    left: auto;
+    right: auto;
+    /* right: 0; */
     /* min-height: 100vh; */
     height: calc(100% - 93px + 251px);
     width: 100vw;
