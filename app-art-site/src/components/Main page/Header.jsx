@@ -13,7 +13,7 @@ const Header = () => {
     return(
         <div className="wrapper">
             <div className="container">
-                <Link to="/" className="n">
+                <Link to="/" className="n" onClick={() => setMenuActive(false)}>
                     <img src={logoMain} alt="Лого" id="logoMain"/>
                 </Link>
 
