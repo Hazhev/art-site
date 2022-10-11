@@ -3,6 +3,7 @@ import "../../Styles/Store.css";
 import StoreCard from "./StoreCard.jsx";
 import LeftArrow from "../../image/left-arrow.svg";
 import Filters from "../Filters";
+import Breadcrumbs from "../Breadcrumbs";
 
 const Store = () => {
   const [openFilters, setOpenFilters] = React.useState(false);
@@ -15,6 +16,7 @@ const Store = () => {
 
   return (
     <div className="store-wrapper">
+      <Breadcrumbs/>
       {openFilters && <Filters closeFilters={toggleFilters}/>}
 
       <div className="store-title-line">

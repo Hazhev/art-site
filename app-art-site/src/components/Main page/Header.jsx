@@ -35,8 +35,9 @@ const Header = () => {
             </div>
             <div className="navigation-bar">
                 <Link to="/store" className="navigation-links">Магазин</Link>
-                <Link to="/artists" className="navigation-links">Художники</Link>
-                <Link to="/themes" className="navigation-links">Темы</Link>
+                <Link to="/collectioners" className="navigation-links">Коллекционеры</Link>
+                {/* <Link to="/artists" className="navigation-links">Художники</Link>
+                <Link to="/themes" className="navigation-links">Темы</Link> */}
                 <Link to="/auctions" className="navigation-links">Аукционы</Link>
                 <Link to="/events" className="navigation-links events">Events</Link>
             </div>
