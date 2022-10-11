@@ -21,11 +21,11 @@ const Menu = ({ active, setActive }) => {
           Художники
         </Link>
         <Link
-          to="/collections"
+          to="/themes"
           className="links-menu"
           onClick={() => setActive(false)}
         >
-          Коллекции
+          Темы
         </Link>
         <Link
           to="/auctions"
