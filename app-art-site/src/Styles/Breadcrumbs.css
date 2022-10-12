@@ -1,0 +1,26 @@
+.breadcrumbs {
+    display: flex;
+    gap: 5px;
+    height: 90px;
+    align-items: center;
+    width: 100%;
+}
+.breadcrumbs span{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #B3B3B3;
+}
+
+.breadcrumb-active span{
+    color: #353535;
+}
+
+@media screen and (max-width:767px){
+    .breadcrumbs{
+        height: 70px;
+    }
+}

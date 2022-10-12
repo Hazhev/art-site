@@ -13,13 +13,15 @@ const Menu = ({ active, setActive }) => {
         >
           Магазин
         </Link>
-        <Link
+
+        {/* <Link
           to="/artists"
           className="links-menu"
           onClick={() => setActive(false)}
         >
           Художники
         </Link>
+
         <Link
           to="/themes"
           className="links-menu"
@@ -27,6 +29,15 @@ const Menu = ({ active, setActive }) => {
         >
           Темы
         </Link>
+         */}
+         <Link
+          to="/collectioners"
+          className="links-menu"
+          onClick={() => setActive(false)}
+        >
+          Коллекционеры
+        </Link>
+
         <Link
           to="/auctions"
           className="links-menu"

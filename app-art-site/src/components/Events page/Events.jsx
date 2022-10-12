@@ -1,12 +1,14 @@
 import React from "react";
 import '../../Styles/Events.css'
+import Breadcrumbs from "../Breadcrumbs";
 import PostEvent from "./PostEvent";
 
 const Events = () => {
     return(
         <div className="wrapper-events">
             <div className="container-events">
-                <h1>Breabcrumbs</h1>
+                <Breadcrumbs/>
+                
                 <PostEvent/>
                 <PostEvent/>
             </div>
