@@ -1,0 +1,333 @@
+.wrapper-store-card-page{
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.container-store-card-page{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.title-container-store-card-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 133px;
+    border-top: 1px solid #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+    gap: 10px;
+}
+
+.title-store-card-page{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.title-sub-store-card-page{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #B3B3B3;
+}
+
+.buy-container-store-card-page{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+    padding: 30px 0;
+}
+
+.buy-image-container{
+    width: 570px;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.buy-image-sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 120px;
+}
+
+.buy-image-sub img{
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #353535;
+}
+
+.buy-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buy-text-title{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.buy-text-content{
+    width: 570px;
+
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.buy-button-price-container{
+    width: 417px;
+    height: 139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buy-button-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-button-price-line{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+#button-buy{
+    width: 293px;
+    height: 80px;
+    background: #353535;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Arsenal';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+}
+
+#button-like{
+    width: 114px;
+    height: 80px;
+    background: #353535;
+    border: 0;
+    cursor: pointer;
+}
+
+.graph-container-store-card-page{
+    height: 495px;
+    border-top: 1px solid #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.graph-img-table-container{
+    display: flex;
+    justify-content: space-between;
+    width: 915px;
+}
+
+.graph-table{
+    display: flex;
+    flex-direction: column;
+    width: 249px;
+    height: 325px;
+    justify-content: space-between;
+}
+
+.graph-table-w{
+    width: 249px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.greaph-light-text{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #B3B3B3;
+}
+
+.graph-dark-text{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #353535;
+}
+
+.graph-table-box{
+    width: 249px;
+    height: 65px;
+    border: 1px solid #353535;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 7px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.about-container-store-card-page{
+    box-sizing: border-box;
+    margin: 30px 0;
+    height: 509px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img-container{
+    width: 370px;
+    height: 508px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.about-btn{
+    position: absolute;
+    bottom: 30px;
+    border: 0;
+    width: 210px;
+    height: 57px;
+
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+#aboutImg{
+    min-width: 0;
+    object-fit: cover;
+    max-width: 100%;
+    height: 508px;
+}
+
+#aplusImg{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.about-text-container{
+    width: 771px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.buy-text-content.about{
+    width: 100%;
+}
+
+.achievements-container-store-card-page{
+    height: 389px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.achievements-title{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.achievements-img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.achievements-img-box{
+    width: 270px;
+    height: 339px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievements-box-title{
+    font-family: 'Arsenal';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #353535;
+}
+
+.achievements-box-content{
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #B3B3B3;
+}
+
+@media screen and (max-width:1189px) {
+    .container-store-card-page{
+        max-width: 960px;
+    }
+}
