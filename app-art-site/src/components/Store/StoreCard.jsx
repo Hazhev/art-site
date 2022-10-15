@@ -4,13 +4,13 @@ import img from "../../image/auctions-img.png";
 import investRating from "../../image/invest_rating.svg";
 import LikeBtn from "../../image/favourite-store-art.svg";
 import AddBtn from "../../image/add-btn.svg";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 const StoreCard = () => {
   const navigate = useNavigate();
   return (
-    <div className="store-card" >
-      <div className="store-card-img-container" onClick={() => navigate("/store/card")}>
+    <div className="store-card" onClick={() => navigate("/store/card")}>
+      <div className="store-card-img-container">
         <img className="store-card-img" src={img} />
         <img className="store-invest-rating" src={investRating} />
       </div>
