@@ -50,12 +50,19 @@
 
 .buy-image-container{
     width: 570px;
-    height: 710px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 }
+
+
+.buy-image-container img{
+    min-width: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
 
 .buy-image-sub{
     display: flex;
@@ -76,7 +83,7 @@
 .buy-text-container{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 570px;
 }
 
 .buy-text-title{
@@ -90,8 +97,6 @@
 }
 
 .buy-text-content{
-    width: 570px;
-
     font-family: 'Arsenal';
     font-style: normal;
     font-weight: 400;
@@ -112,6 +117,7 @@
 .buy-button-container{
     display: flex;
     justify-content: space-between;
+    height: 80px;
 }
 
 .buy-button-price-line{
@@ -126,7 +132,7 @@
 
 #button-buy{
     width: 293px;
-    height: 80px;
+    height: 100%;
     background: #353535;
     border: 0;
     cursor: pointer;
@@ -142,7 +148,7 @@
 
 #button-like{
     width: 114px;
-    height: 80px;
+    height: 100%;
     background: #353535;
     border: 0;
     cursor: pointer;
@@ -160,14 +166,14 @@
 
 .graph-img-table-container{
     display: flex;
-    justify-content: space-between;
-    width: 915px;
+    justify-content: center;
+    gap: 30px;
+    max-width: 100%;
 }
 
 .graph-table{
     display: flex;
     flex-direction: column;
-    width: 249px;
     height: 325px;
     justify-content: space-between;
 }
@@ -200,7 +206,7 @@
 }
 
 .graph-table-box{
-    width: 249px;
+    width: 100%;
     height: 65px;
     border: 1px solid #353535;
 
@@ -212,6 +218,10 @@
     padding-right: 7px;
     justify-content: space-between;
     cursor: pointer;
+}
+
+#Graph{
+    max-width: fit-content;
 }
 
 .about-container-store-card-page{
@@ -250,12 +260,13 @@
 #aboutImg{
     min-width: 0;
     object-fit: cover;
-    max-width: 100%;
-    height: 508px;
+    width: 100%;
+    height: 100%;
 }
 
 #aplusImg{
     position: absolute;
+    object-fit: contain;
     right: 10px;
     top: 10px;
 }
@@ -263,9 +274,7 @@
 .about-text-container{
     width: 771px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
+    flex-direction: column;    
 }
 
 .buy-text-content.about{
@@ -304,6 +313,12 @@
     justify-content: space-between;
 }
 
+.achievements-img-box img{
+        min-width: 0;
+        object-fit: cover;
+        width: 100%;
+}
+
 .achievements-box-title{
     font-family: 'Arsenal';
     font-style: italic;
@@ -329,5 +344,333 @@
 @media screen and (max-width:1189px) {
     .container-store-card-page{
         max-width: 960px;
+    }
+
+    .buy-image-container{
+        width: 471px;
+    }
+
+    .buy-image-sub{
+        width: 379px;
+        height: 91px;
+    }
+
+    .buy-image-sub img{
+        width: 91px;
+        height: 91px;
+        padding: 8px;
+    }
+
+    .buy-text-container{
+        width: 470px;
+        height: 470px;
+    }
+
+    .buy-container-store-card-page{
+        column-gap: 19px;
+    }
+    .buy-text-content{
+        overflow: hidden;
+    }
+
+    .buy-text-title{
+        font-size: 20px;
+    }
+
+    .buy-button-price-container{
+        height: 134px;
+    }
+
+    .buy-button-price-line{
+        font-size: 28px;
+    }
+
+    .graph-container-store-card-page{
+        height: 476px;
+        height: 500px;
+    }
+
+    .about-text-container{
+        width: 552px;
+    }
+
+    .about-img-container{
+        height: unset;
+        width: 388px;
+    }
+
+    .achievements-container-store-card-page{
+        height: 425px;
+    }
+
+    .achievements-img-container div:nth-child(4){
+        display: none;
+    }
+
+    .achievements-img-box{
+        width: 307px;
+        height: 375px;
+    }
+
+}
+
+@media screen and (max-width:999px) {
+
+    .wrapper-store-card-page{
+        padding-bottom: 80px;
+    }
+
+    .container-store-card-page{
+        max-width: 728px;
+    }
+
+    .buy-image-container{
+        width: 354px;
+    }
+
+    .buy-image-sub{
+        width: 288px;
+        height: 71px;
+    }
+
+    .buy-image-sub img{
+        width: 71px;
+        height: 71px;
+        padding: 8px;
+    }
+
+    .buy-text-container{
+        width: 354px;
+        height: 360px;
+    }
+
+    .buy-button-price-line{
+        font-size: 24px;
+    }
+
+    .graph-img-table-container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .graph-container-store-card-page{
+        height: 587px;
+    }
+
+    .graph-table{
+        flex-direction: row;
+        height: unset;
+        width: 100%;
+    }
+
+    .graph-table-w{
+        width: 229px;
+        height: 91px;
+    }
+
+    .graph-table-box{
+        height: 58px;
+        padding-right: 10px;
+    }
+
+    .greaph-light-text{
+        font-size: 15px;
+    }
+
+    .graph-dark-text{
+        font-size: 14px;
+    }
+
+    .about-container-store-card-page{
+        height: 374px;
+    }
+
+    .about-img-container{
+        width: 292px;
+    }
+
+    .about-text-container{
+        width: 416px;
+    }
+
+    .about-btn{
+        height: 53px;
+    }
+
+    .achievements-container-store-card-page{
+        height: 342px;
+    }
+
+    .achievements-img-box{
+        height: 297px;
+        width: 229px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container-store-card-page{
+        width: calc(100% - 40px);
+    }
+
+    .buy-container-store-card-page{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .buy-image-container{
+        width: calc(100% - 50px);
+    }
+
+    .buy-text-container{
+        width: unset;
+    }
+
+    .buy-button-price-container{
+        width: 100%;
+        align-items: center;
+    }
+
+    .buy-button-container{
+        gap: 12px;
+        justify-content: unset;
+        width: 100%;
+    }
+
+    #button-buy{
+        width: unset;
+        flex: 2.5 0;
+    }
+
+    #button-like{
+        width: unset;
+        flex: 1 0;
+    }
+
+    #Graph {
+        min-width: 0;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .graph-container-store-card-page{
+        height: unset;
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    .graph-table{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .graph-table-w{
+        flex: 1 0 229px;
+    }
+
+
+    .about-container-store-card-page{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img-container{
+        width: calc(100% - 140px);
+    }
+
+    #aboutImg{
+        height: 374px;
+    }
+
+    .about-container-store-card-page{
+        height: 784px;
+        gap: 20px;
+    }
+
+    .about-text-container{
+        overflow: hidden;
+        width: unset;
+        align-items: center;
+    }
+
+    .achievements-container-store-card-page{
+        align-items: center;
+        height: unset;
+        gap: 30px;
+    }
+
+    .achievements-img-container{
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 665px;
+    }
+
+    .achievements-img-box{
+        flex: 1 0 210px;
+        height: unset;
+        gap: 5px;
+    }
+
+    .achievements-img-container div:nth-child(4){
+        display: unset;
+    }
+
+    .achievements-box-title{
+        font-size: 15px;
+    }
+
+    .achievements-box-content{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:479px) {
+
+    .wrapper-store-card-page{
+        padding-bottom: 60px;
+    }
+
+    .title-container-store-card-page{
+        height: 126px;
+    }
+
+    .buy-image-container{
+        gap: 15px;
+    }
+
+    .buy-image-sub{
+        width: 228px;
+        height: unset;
+    }
+
+    .buy-image-sub img{
+        width: 56px;
+        height: 56px;
+    }
+
+    .buy-button-price-container{
+        height: 100px;
+    }
+
+    .buy-button-container{
+        height: 55px;
+    }
+
+    .about-btn{
+        width: 191px;
+        height: 50px;
+    }
+
+    #aplusImg{
+        width: 50px;
+    }
+
+    .about-img-container{
+        width: calc(100% - 40px);
+    }
+
+    .achievements-img-container{
+        width: calc(100% - 70px);
     }
 }
